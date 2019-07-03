@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1853B46622CC96CF00A5C4FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B46522CC96CF00A5C4FA /* AppDelegate.m */; };
+		1853B46922CC96CF00A5C4FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B46822CC96CF00A5C4FA /* ViewController.m */; };
+		1853B46C22CC96CF00A5C4FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1853B46A22CC96CF00A5C4FA /* Main.storyboard */; };
+		1853B46E22CC96D000A5C4FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1853B46D22CC96D000A5C4FA /* Assets.xcassets */; };
+		1853B47122CC96D000A5C4FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1853B46F22CC96D000A5C4FA /* LaunchScreen.storyboard */; };
+		1853B47422CC96D000A5C4FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B47322CC96D000A5C4FA /* main.m */; };
+		1853B47E22CC96D000A5C4FA /* YMRERDylibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B47D22CC96D000A5C4FA /* YMRERDylibTests.m */; };
+		1853B48922CC96D000A5C4FA /* YMRERDylibUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B48822CC96D000A5C4FA /* YMRERDylibUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1853B47A22CC96D000A5C4FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1853B45922CC96CF00A5C4FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1853B46022CC96CF00A5C4FA;
+			remoteInfo = YMRERDylib;
+		};
+		1853B48522CC96D000A5C4FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1853B45922CC96CF00A5C4FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1853B46022CC96CF00A5C4FA;
+			remoteInfo = YMRERDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1853B46122CC96CF00A5C4FA /* YMRERDylib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMRERDylib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1853B46422CC96CF00A5C4FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1853B46522CC96CF00A5C4FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1853B46722CC96CF00A5C4FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1853B46822CC96CF00A5C4FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1853B46B22CC96CF00A5C4FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1853B46D22CC96D000A5C4FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1853B47022CC96D000A5C4FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1853B47222CC96D000A5C4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1853B47322CC96D000A5C4FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1853B47922CC96D000A5C4FA /* YMRERDylibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMRERDylibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1853B47D22CC96D000A5C4FA /* YMRERDylibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMRERDylibTests.m; sourceTree = "<group>"; };
+		1853B47F22CC96D000A5C4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1853B48422CC96D000A5C4FA /* YMRERDylibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMRERDylibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1853B48822CC96D000A5C4FA /* YMRERDylibUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMRERDylibUITests.m; sourceTree = "<group>"; };
+		1853B48A22CC96D000A5C4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1853B45E22CC96CF00A5C4FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1853B47622CC96D000A5C4FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1853B48122CC96D000A5C4FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1853B45822CC96CF00A5C4FA = {
+			isa = PBXGroup;
+			children = (
+				1853B46322CC96CF00A5C4FA /* YMRERDylib */,
+				1853B47C22CC96D000A5C4FA /* YMRERDylibTests */,
+				1853B48722CC96D000A5C4FA /* YMRERDylibUITests */,
+				1853B46222CC96CF00A5C4FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1853B46222CC96CF00A5C4FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1853B46122CC96CF00A5C4FA /* YMRERDylib.app */,
+				1853B47922CC96D000A5C4FA /* YMRERDylibTests.xctest */,
+				1853B48422CC96D000A5C4FA /* YMRERDylibUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1853B46322CC96CF00A5C4FA /* YMRERDylib */ = {
+			isa = PBXGroup;
+			children = (
+				1853B46422CC96CF00A5C4FA /* AppDelegate.h */,
+				1853B46522CC96CF00A5C4FA /* AppDelegate.m */,
+				1853B46722CC96CF00A5C4FA /* ViewController.h */,
+				1853B46822CC96CF00A5C4FA /* ViewController.m */,
+				1853B46A22CC96CF00A5C4FA /* Main.storyboard */,
+				1853B46D22CC96D000A5C4FA /* Assets.xcassets */,
+				1853B46F22CC96D000A5C4FA /* LaunchScreen.storyboard */,
+				1853B47222CC96D000A5C4FA /* Info.plist */,
+				1853B47322CC96D000A5C4FA /* main.m */,
+			);
+			path = YMRERDylib;
+			sourceTree = "<group>";
+		};
+		1853B47C22CC96D000A5C4FA /* YMRERDylibTests */ = {
+			isa = PBXGroup;
+			children = (
+				1853B47D22CC96D000A5C4FA /* YMRERDylibTests.m */,
+				1853B47F22CC96D000A5C4FA /* Info.plist */,
+			);
+			path = YMRERDylibTests;
+			sourceTree = "<group>";
+		};
+		1853B48722CC96D000A5C4FA /* YMRERDylibUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1853B48822CC96D000A5C4FA /* YMRERDylibUITests.m */,
+				1853B48A22CC96D000A5C4FA /* Info.plist */,
+			);
+			path = YMRERDylibUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1853B46022CC96CF00A5C4FA /* YMRERDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1853B48D22CC96D000A5C4FA /* Build configuration list for PBXNativeTarget "YMRERDylib" */;
+			buildPhases = (
+				1853B45D22CC96CF00A5C4FA /* Sources */,
+				1853B45E22CC96CF00A5C4FA /* Frameworks */,
+				1853B45F22CC96CF00A5C4FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YMRERDylib;
+			productName = YMRERDylib;
+			productReference = 1853B46122CC96CF00A5C4FA /* YMRERDylib.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1853B47822CC96D000A5C4FA /* YMRERDylibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1853B49022CC96D000A5C4FA /* Build configuration list for PBXNativeTarget "YMRERDylibTests" */;
+			buildPhases = (
+				1853B47522CC96D000A5C4FA /* Sources */,
+				1853B47622CC96D000A5C4FA /* Frameworks */,
+				1853B47722CC96D000A5C4FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1853B47B22CC96D000A5C4FA /* PBXTargetDependency */,
+			);
+			name = YMRERDylibTests;
+			productName = YMRERDylibTests;
+			productReference = 1853B47922CC96D000A5C4FA /* YMRERDylibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1853B48322CC96D000A5C4FA /* YMRERDylibUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1853B49322CC96D000A5C4FA /* Build configuration list for PBXNativeTarget "YMRERDylibUITests" */;
+			buildPhases = (
+				1853B48022CC96D000A5C4FA /* Sources */,
+				1853B48122CC96D000A5C4FA /* Frameworks */,
+				1853B48222CC96D000A5C4FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1853B48622CC96D000A5C4FA /* PBXTargetDependency */,
+			);
+			name = YMRERDylibUITests;
+			productName = YMRERDylibUITests;
+			productReference = 1853B48422CC96D000A5C4FA /* YMRERDylibUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1853B45922CC96CF00A5C4FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = MustangYM;
+				TargetAttributes = {
+					1853B46022CC96CF00A5C4FA = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					1853B47822CC96D000A5C4FA = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 1853B46022CC96CF00A5C4FA;
+					};
+					1853B48322CC96D000A5C4FA = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 1853B46022CC96CF00A5C4FA;
+					};
+				};
+			};
+			buildConfigurationList = 1853B45C22CC96CF00A5C4FA /* Build configuration list for PBXProject "YMRERDylib" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1853B45822CC96CF00A5C4FA;
+			productRefGroup = 1853B46222CC96CF00A5C4FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1853B46022CC96CF00A5C4FA /* YMRERDylib */,
+				1853B47822CC96D000A5C4FA /* YMRERDylibTests */,
+				1853B48322CC96D000A5C4FA /* YMRERDylibUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1853B45F22CC96CF00A5C4FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1853B47122CC96D000A5C4FA /* LaunchScreen.storyboard in Resources */,
+				1853B46E22CC96D000A5C4FA /* Assets.xcassets in Resources */,
+				1853B46C22CC96CF00A5C4FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1853B47722CC96D000A5C4FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1853B48222CC96D000A5C4FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1853B45D22CC96CF00A5C4FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1853B46922CC96CF00A5C4FA /* ViewController.m in Sources */,
+				1853B47422CC96D000A5C4FA /* main.m in Sources */,
+				1853B46622CC96CF00A5C4FA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1853B47522CC96D000A5C4FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1853B47E22CC96D000A5C4FA /* YMRERDylibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1853B48022CC96D000A5C4FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1853B48922CC96D000A5C4FA /* YMRERDylibUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1853B47B22CC96D000A5C4FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1853B46022CC96CF00A5C4FA /* YMRERDylib */;
+			targetProxy = 1853B47A22CC96D000A5C4FA /* PBXContainerItemProxy */;
+		};
+		1853B48622CC96D000A5C4FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1853B46022CC96CF00A5C4FA /* YMRERDylib */;
+			targetProxy = 1853B48522CC96D000A5C4FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1853B46A22CC96CF00A5C4FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1853B46B22CC96CF00A5C4FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1853B46F22CC96D000A5C4FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1853B47022CC96D000A5C4FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1853B48B22CC96D000A5C4FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1853B48C22CC96D000A5C4FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1853B48E22CC96D000A5C4FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMN9N2C3G8;
+				INFOPLIST_FILE = YMRERDylib/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MustangYM.YMRERDylib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1853B48F22CC96D000A5C4FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMN9N2C3G8;
+				INFOPLIST_FILE = YMRERDylib/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MustangYM.YMRERDylib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1853B49122CC96D000A5C4FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMN9N2C3G8;
+				INFOPLIST_FILE = YMRERDylibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MustangYM.YMRERDylibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YMRERDylib.app/YMRERDylib";
+			};
+			name = Debug;
+		};
+		1853B49222CC96D000A5C4FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMN9N2C3G8;
+				INFOPLIST_FILE = YMRERDylibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MustangYM.YMRERDylibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YMRERDylib.app/YMRERDylib";
+			};
+			name = Release;
+		};
+		1853B49422CC96D000A5C4FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMN9N2C3G8;
+				INFOPLIST_FILE = YMRERDylibUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MustangYM.YMRERDylibUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YMRERDylib;
+			};
+			name = Debug;
+		};
+		1853B49522CC96D000A5C4FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMN9N2C3G8;
+				INFOPLIST_FILE = YMRERDylibUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MustangYM.YMRERDylibUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YMRERDylib;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1853B45C22CC96CF00A5C4FA /* Build configuration list for PBXProject "YMRERDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1853B48B22CC96D000A5C4FA /* Debug */,
+				1853B48C22CC96D000A5C4FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1853B48D22CC96D000A5C4FA /* Build configuration list for PBXNativeTarget "YMRERDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1853B48E22CC96D000A5C4FA /* Debug */,
+				1853B48F22CC96D000A5C4FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1853B49022CC96D000A5C4FA /* Build configuration list for PBXNativeTarget "YMRERDylibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1853B49122CC96D000A5C4FA /* Debug */,
+				1853B49222CC96D000A5C4FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1853B49322CC96D000A5C4FA /* Build configuration list for PBXNativeTarget "YMRERDylibUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1853B49422CC96D000A5C4FA /* Debug */,
+				1853B49522CC96D000A5C4FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1853B45922CC96CF00A5C4FA /* Project object */;
+}
