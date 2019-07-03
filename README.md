@@ -76,7 +76,7 @@ rebind_symbols((struct rebinding[1]){{"sysctl",hook_sysctl_p,(void *)&sysctl_p}}
 <img src="https://github.com/MustangYM/YMRERDylib/blob/master/YMRERDylib/YMRERDylib/pics/WX20190703-180558.png" width="800px"/>
 </p>
 
-- 即便黑客拿到了creatNSString这个方法, 追踪进来也不无法直接得出字符串
+- 即便黑客拿到了creatNSString这个方法, 追踪进来也无法直接得出字符串
 <p align="center">
 <img src="https://github.com/MustangYM/YMRERDylib/blob/master/YMRERDylib/YMRERDylib/pics/WX20190703-180646.png" width="800px"/>
 </p>
