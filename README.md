@@ -4,9 +4,51 @@
      
 # ①反调试 
 - check_debug
+```
+bool check_debug(){
+    int sys_name[4];
+    sys_name[0] = CTL_KERN;
+    sys_name[1] = KERN_PROC;
+    sys_name[2] = KERN_PROC_PID;
+    sys_name[3] = getpid();
+    struct kinfo_proc info;
+    size_t info_size = sizeof(info);
+    int error = sysctl(sys_name, sizeof(sys_name)/sizeof(*sys_name), &info, &info_size, 0, 0);
+    assert(error == 0);
+    
+    return ((info.kp_proc.p_flag & P_TRACED) !=0);
+}
+
+```
 
 # ②反反调试
+```
+int (*sysctl_p)(int *, u_int, void *, size_t *, void *, size_t);
+int hook_sysctl_p(int *sys_name, u_int namelen, void *info, size_t *infosize, void *newinfo, size_t newinfosize){
+    if (namelen == 4
+        && sys_name[0] == CTL_KERN
+        && sys_name[1] == KERN_PROC
+        && sys_name[2] == KERN_PROC_PID
+        && info
+        && (int)*infosize == sizeof(struct kinfo_proc))
+    {
+        int err = sysctl_p(sys_name, namelen, info, infosize, newinfo, newinfosize);
+        struct kinfo_proc * myInfo = (struct kinfo_proc *)info;
+        if((myInfo->kp_proc.p_flag & P_TRACED) != 0){
+            myInfo->kp_proc.p_flag ^= P_TRACED;
+        }
+        return err;
+    }
+    
+    return sysctl_p(sys_name, namelen, info, infosize, newinfo, newinfosize);
+}
+
+```
 - 通过hook_sysctl_p函数hook掉sysctl库的sysctl_p函数, 达到反反调试的目的
+```
+rebind_symbols((struct rebinding[1]){{"sysctl",hook_sysctl_p,(void *)&sysctl_p}}, 1);
+
+```
 
 # ③字符串反反编译 
 > 逆向中的很多逻辑线索的寻找, 是通过字符串猜测到的, 而主流反编译工具可以很轻松的还原这些字符. 所以对关键字符的隐藏至关重要. 至关重要. 至关...
