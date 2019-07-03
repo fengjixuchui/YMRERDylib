@@ -13,14 +13,14 @@
 #import "fishhook.h"
 
 bool check_debug(){
-    int name[4];
-    name[0] = CTL_KERN;
-    name[1] = KERN_PROC;
-    name[2] = KERN_PROC_PID;
-    name[3] = getpid();
+    int sys_name[4];
+    sys_name[0] = CTL_KERN;
+    sys_name[1] = KERN_PROC;
+    sys_name[2] = KERN_PROC_PID;
+    sys_name[3] = getpid();
     struct kinfo_proc info;
     size_t info_size = sizeof(info);
-    int error = sysctl(name, sizeof(name)/sizeof(*name), &info, &info_size, 0, 0);
+    int error = sysctl(sys_name, sizeof(sys_name)/sizeof(*sys_name), &info, &info_size, 0, 0);
     assert(error == 0);
     
     return ((info.kp_proc.p_flag & P_TRACED) !=0);
@@ -34,15 +34,15 @@ void FFyuzAZO(unsigned char *string, unsigned char key)
 
 
 int (*sysctl_p)(int *, u_int, void *, size_t *, void *, size_t);
-int hook_sysctl_p(int *name, u_int namelen, void *info, size_t *infosize, void *newinfo, size_t newinfosize){
+int hook_sysctl_p(int *sys_name, u_int namelen, void *info, size_t *infosize, void *newinfo, size_t newinfosize){
     if (namelen == 4
-        && name[0] == CTL_KERN
-        && name[1] == KERN_PROC
-        && name[2] == KERN_PROC_PID
+        && sys_name[0] == CTL_KERN
+        && sys_name[1] == KERN_PROC
+        && sys_name[2] == KERN_PROC_PID
         && info
         && (int)*infosize == sizeof(struct kinfo_proc))
     {
-        int err = sysctl_p(name, namelen, info, infosize, newinfo, newinfosize);
+        int err = sysctl_p(sys_name, namelen, info, infosize, newinfo, newinfosize);
         struct kinfo_proc * myInfo = (struct kinfo_proc *)info;
         if((myInfo->kp_proc.p_flag & P_TRACED) != 0){
             myInfo->kp_proc.p_flag ^= P_TRACED;
@@ -50,7 +50,7 @@ int hook_sysctl_p(int *name, u_int namelen, void *info, size_t *infosize, void *
         return err;
     }
     
-    return sysctl_p(name, namelen, info, infosize, newinfo, newinfosize);
+    return sysctl_p(sys_name, namelen, info, infosize, newinfo, newinfosize);
 }
 
 
