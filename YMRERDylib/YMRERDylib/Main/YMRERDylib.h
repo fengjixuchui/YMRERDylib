@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface YMRERDylib : NSObject
-
++ (NSString *)creatNSString;
 @end
 

@@ -13,9 +13,8 @@
 		1853B4C322CCA00700A5C4FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1853B4C222CCA00700A5C4FA /* Assets.xcassets */; };
 		1853B4C622CCA00700A5C4FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1853B4C422CCA00700A5C4FA /* LaunchScreen.storyboard */; };
 		1853B4C922CCA00700A5C4FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B4C822CCA00700A5C4FA /* main.m */; };
-		1853B4D322CCA00700A5C4FA /* YMRERDylibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B4D222CCA00700A5C4FA /* YMRERDylibTests.m */; };
-		1853B4DE22CCA00700A5C4FA /* YMRERDylibUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B4DD22CCA00700A5C4FA /* YMRERDylibUITests.m */; };
-		1853B4EE22CCA05F00A5C4FA /* YMRERDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1853B4ED22CCA05F00A5C4FA /* YMRERDylib.mm */; };
+		1853B4EE22CCA05F00A5C4FA /* YMRERDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B4ED22CCA05F00A5C4FA /* YMRERDylib.m */; };
+		1853B4F122CCAE8B00A5C4FA /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 1853B4F022CCAE8B00A5C4FA /* fishhook.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,13 +46,11 @@
 		1853B4C722CCA00700A5C4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1853B4C822CCA00700A5C4FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1853B4CE22CCA00700A5C4FA /* YMRERDylibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMRERDylibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1853B4D222CCA00700A5C4FA /* YMRERDylibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMRERDylibTests.m; sourceTree = "<group>"; };
-		1853B4D422CCA00700A5C4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1853B4D922CCA00700A5C4FA /* YMRERDylibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMRERDylibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1853B4DD22CCA00700A5C4FA /* YMRERDylibUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMRERDylibUITests.m; sourceTree = "<group>"; };
-		1853B4DF22CCA00700A5C4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1853B4EC22CCA05F00A5C4FA /* YMRERDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMRERDylib.h; sourceTree = "<group>"; };
-		1853B4ED22CCA05F00A5C4FA /* YMRERDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = YMRERDylib.mm; sourceTree = "<group>"; };
+		1853B4ED22CCA05F00A5C4FA /* YMRERDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMRERDylib.m; sourceTree = "<group>"; };
+		1853B4EF22CCAE8B00A5C4FA /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		1853B4F022CCAE8B00A5C4FA /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				1853B4B822CCA00600A5C4FA /* YMRERDylib */,
-				1853B4D122CCA00700A5C4FA /* YMRERDylibTests */,
-				1853B4DC22CCA00700A5C4FA /* YMRERDylibUITests */,
 				1853B4B722CCA00600A5C4FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,29 +113,13 @@
 			path = YMRERDylib;
 			sourceTree = "<group>";
 		};
-		1853B4D122CCA00700A5C4FA /* YMRERDylibTests */ = {
-			isa = PBXGroup;
-			children = (
-				1853B4D222CCA00700A5C4FA /* YMRERDylibTests.m */,
-				1853B4D422CCA00700A5C4FA /* Info.plist */,
-			);
-			path = YMRERDylibTests;
-			sourceTree = "<group>";
-		};
-		1853B4DC22CCA00700A5C4FA /* YMRERDylibUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1853B4DD22CCA00700A5C4FA /* YMRERDylibUITests.m */,
-				1853B4DF22CCA00700A5C4FA /* Info.plist */,
-			);
-			path = YMRERDylibUITests;
-			sourceTree = "<group>";
-		};
 		1853B4EB22CCA05100A5C4FA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1853B4EF22CCAE8B00A5C4FA /* fishhook.h */,
+				1853B4F022CCAE8B00A5C4FA /* fishhook.c */,
 				1853B4EC22CCA05F00A5C4FA /* YMRERDylib.h */,
-				1853B4ED22CCA05F00A5C4FA /* YMRERDylib.mm */,
+				1853B4ED22CCA05F00A5C4FA /* YMRERDylib.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -276,8 +255,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1853B4BE22CCA00600A5C4FA /* ViewController.m in Sources */,
+				1853B4F122CCAE8B00A5C4FA /* fishhook.c in Sources */,
 				1853B4C922CCA00700A5C4FA /* main.m in Sources */,
-				1853B4EE22CCA05F00A5C4FA /* YMRERDylib.mm in Sources */,
+				1853B4EE22CCA05F00A5C4FA /* YMRERDylib.m in Sources */,
 				1853B4BB22CCA00600A5C4FA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +266,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1853B4D322CCA00700A5C4FA /* YMRERDylibTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +273,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1853B4DE22CCA00700A5C4FA /* YMRERDylibUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
