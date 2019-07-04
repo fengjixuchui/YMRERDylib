@@ -4,7 +4,7 @@
      
 # ①反调试 
 - check_debug
- 从内核中通过自己的进程id去查询进程信息, 如果当前进程正在被debug, 那么可通过sysctl这个库中的kinfo_proc结构体里的p_flag参数判断, 他的第12位是1就是正在被debug, 0就是没debug. 关于sysctl更多信息请看[WWDC2015](https://developer.apple.com/videos/play/wwdc2015/703/)
+ 从内核中通过自己的进程id去查询进程信息, 如果当前进程正在被debug, 那么可通过sysctl这个库中的kinfo_proc结构体里的p_flag参数判断, 他的第12位不为0就是正在debug. 关于sysctl更多信息请看[WWDC2015](https://developer.apple.com/videos/play/wwdc2015/703/)
 ```
 bool check_debug(){
     int sys_name[4];
